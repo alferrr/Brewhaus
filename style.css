@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brown: #4b2e1f;
+  --khaki: #faf1d7;
+  --text: #f3e8c4;
+  --dirty: #f2ead1;
+  --heading: "Bricolage Grotesque", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+  background: var(--brown);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background: none;
+  margin: 0 auto;
+  position: sticky;
+  z-index: 1;
+  top: 50px;
+  padding: 20px;
+  border-radius: 100px;
+  background-color: var(--brown);
+  font-size: 0.9rem;
+
+  ul {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  min-height: 100dvh;
+  background-color: #4b2e1f;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+
+  main {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    /* border: 1px solid white; */
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    nav {
+      padding-top: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+
+      a {
+        padding: 10px 20px;
+        background-color: var(--text);
+        border-radius: 100px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: var(--brown);
+        font-weight: 600;
+        letter-spacing: -0.5px;
+      }
+
+      .Our {
+        background: transparent;
+        border: 1px solid var(--text);
+        color: var(--text);
+      }
+    }
+  }
+  h1 {
+    font-family: "Bricolague Grotesque";
+    font-size: 7rem;
+    text-align: center;
+    color: wheat;
+  }
+
+  .cups {
+    padding-top: 5rem;
+    img {
+      height: 70vh;
+      margin-bottom: -10px;
+    }
+  }
+
+  footer {
+    height: 2rem;
+    width: 100%;
+    background-color: wheat;
+  }
+}
+
+.page1 {
+  position: relative;
+  min-height: 120dvh;
+  background: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+
+  h1 {
+    color: var(--brown);
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--brown);
+      gap: 2em;
+      text-align: center;
+      /* border: 1px solid brown; */
+
+      .photo {
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        border: 1px solid var(--brown);
+        background-color: var(--brown);
+        background-image: url(cup.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.page2 {
+  position: relative;
+  min-height: 100vh;
+  background: var(--dirty);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+
+  color: var(--brown);
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    h1 {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-size: 5rem;
+    }
+
+    p {
+      font-weight: 300;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+
+      .photo {
+        height: 250px;
+        width: 250px;
+        border-radius: 24px;
+        background: var(--brown);
+        background-image: url(cup.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .price {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.page3 {
+  position: relative;
+  min-height: 120dvh;
+  background: var(--khaki);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brown);
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    gap: 2em;
+
+    .head {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 1em;
+
+      h1 {
+        font-size: 5rem;
+        font-family: var(--heading);
+      }
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      flex: 0 0 5em;
+
+      .block {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        padding: 20px;
+        display: grid;
+        place-items: center;
+        font-weight: 700;
+        font-family: var(--heading);
+        font-size: 1.2rem;
+        border: 1px solid rgba(78, 78, 78, 0.188);
+        text-align: center;
+      }
+
+      .one,
+      .three {
+        border-left: none;
+      }
+
+      .one,
+      .two {
+        border-top: none;
+      }
+
+      .two,
+      .four {
+        border-right: none;
+      }
+
+      .four,
+      .three {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .photos {
+    position: relative;
+    width: 40%;
+    height: 90vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    .photo1 {
+      height: 90%;
+      width: 250px;
+      /* border: 1px solid black; */
+      border-radius: 24px;
+      background: url(photo.jpg) no-repeat center/cover;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2em;
+      height: 80vh;
+    }
+    .photo {
+      height: 270px;
+      width: 250px;
+      /* border: 1px solid black; */
+      border-radius: 24px;
+      background: url(coffee.png) no-repeat center/cover;
+    }
+
+    .one {
+      background: url(shop.png) no-repeat bottom center/cover;
+    }
+  }
+}
+
+.page4 {
+  position: relative;
+  min-height: 120dvh;
+  background: var(--khaki);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  color: var(--brown);
+
+  h1 {
+    font-family: var(--heading);
+    color: var(--brown);
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .two {
+      flex-direction: column-reverse;
+    }
+
+    .block {
+      width: 350px;
+      height: 200px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      border-radius: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.244);
+      background: #f2ead18b;
+
+      font-weight: 500;
+    }
+
+    .photo {
+      width: 350px;
+      height: 300px;
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+
+    .one {
+      background: url(one.png) no-repeat center/cover;
+    }
+
+    .tw {
+      background: url(two.png) no-repeat center/cover;
+    }
+    .thr {
+      background: url(three.png) no-repeat center/cover;
+    }
+  }
+}
+
+.page5 {
+  position: relative;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background: var(--dirty);
+  color: var(--brown);
+
+  h1 {
+    font-family: var(--heading);
+  }
+  h2 {
+    font-weight: 300;
+  }
+}
+
+footer {
+  position: relative;
+  height: 60vh;
+  background: var(--brown);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  font-size: 7rem;
+}
